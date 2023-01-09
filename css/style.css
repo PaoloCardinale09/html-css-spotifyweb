@@ -1,6 +1,7 @@
 /* GENERICS */
 body {
     font-family: 'Figtree', sans-serif;
+    font-weight: 700;
 }
 
 ul {
@@ -66,7 +67,6 @@ a {
 /* playlist */
 
 .playlist h2 {
-    font-weight: 700;
     margin-bottom: .5rem;
 }
 
@@ -79,6 +79,11 @@ a {
 }
 
 /* user */
+
+.user {
+    margin-top: auto;
+}
+
 .user img {
     width: 1rem;
 }
@@ -97,12 +102,12 @@ a {
 }
 
 /* MAIN  */
+
 main header {
     height: 4rem;
     width: calc(100% - 15rem);
     position: fixed;
-    background-color: #000000;
-    opacity: .7;
+    background-color: #000000aa;
     color: white;
 }
 
@@ -112,7 +117,6 @@ main header {
     border: 1px solid white;
     padding: .7rem 2.5rem;
     font-size: .8rem;
-    font-weight: 700;
     margin-right: .2rem;
 }
 
@@ -120,7 +124,7 @@ main {
     width: calc(100% - 15rem);
     height: calc(100vh - 5rem);
     /* DEBUG */
-    background-color: red;
+    background-color: #141922;
     overflow: auto;
 }
 
@@ -129,21 +133,46 @@ main ul {
     flex-wrap: wrap;
 }
 
-.user {
-    margin-top: auto;
+main ul a {
+    font-size: .8rem;
+    color: #a3a3a3;
 }
-
-
 
 .main-content {
     padding-top: 5rem;
 }
 
-/* Recently  */
 
+/* Recently section */
+.recently h4 {
+    font-size: .8rem;
+    color: #a3a3a3;
+}
 
+.recently h3 {
+    font-size: 1rem;
+}
+
+.recently {
+    font-size: 1.3rem;
+    color: white;
+}
 
 /* Personal create */
+
+.personal-create h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.personal-create p {
+    font-size: .8rem;
+    color: #a3a3a3;
+}
+
+.personal-create h3 {
+    color: white;
+}
 
 
 /* POPULAR */
