@@ -69,7 +69,11 @@ main ul {
 
 /* Personal create */
 
-.personal-create {}
+
+/* POPULAR */
+.popular .box {
+    border-radius: 50%;
+}
 
 /* FOOTER */
 footer {
@@ -81,7 +85,18 @@ footer {
     background-color: aqua;
 }
 
-/* POPULAR */
-.popular .box {
-    border-radius: 50%;
+.controls {
+    justify-content: center;
+}
+
+
+.center-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-foot,
+.left-foot {
+    align-items: center;
 }
