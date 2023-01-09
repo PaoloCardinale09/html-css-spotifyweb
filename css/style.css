@@ -101,7 +101,19 @@ main header {
     height: 4rem;
     width: calc(100% - 15rem);
     position: fixed;
-    background-color: aquamarine;
+    background-color: #000000;
+    opacity: .7;
+    color: white;
+}
+
+
+.btn {
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: .7rem 2.5rem;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: .2rem;
 }
 
 main {
@@ -121,10 +133,6 @@ main ul {
     margin-top: auto;
 }
 
-.btn {
-    text-align: end;
-    line-height: 4rem;
-}
 
 
 .main-content {
