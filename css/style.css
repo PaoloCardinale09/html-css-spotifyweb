@@ -1,0 +1,87 @@
+/* GENERICS */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    height: 10rem;
+    width: 10rem;
+    background-color: aliceblue;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+/* SIDE BAR */
+#side-bar {
+    width: 15rem;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    /* DEBUG*/
+    background-color: blue;
+    color: white;
+}
+
+/* MAIN  */
+main header {
+    height: 4rem;
+    width: calc(100% - 15rem);
+    position: fixed;
+    background-color: aquamarine;
+}
+
+main {
+    width: calc(100% - 15rem);
+    height: calc(100vh - 5rem);
+    /* DEBUG */
+    background-color: red;
+    overflow: auto;
+}
+
+main ul {
+    gap: 1rem;
+}
+
+.user {
+    margin-top: auto;
+}
+
+.btn {
+    text-align: end;
+    line-height: 4rem;
+}
+
+
+.main-content {
+    padding-top: 4rem;
+}
+
+/* Recently  */
+
+
+
+/* Personal create */
+
+.personal-create {}
+
+/* FOOTER */
+footer {
+    height: 5rem;
+    width: 100%;
+    margin-top: auto;
+
+    /* DEBUG */
+    background-color: aqua;
+}
+
+/* POPULAR */
+.popular .box {
+    border-radius: 50%;
+}
