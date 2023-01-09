@@ -180,6 +180,24 @@ main ul a {
     border-radius: 50%;
 }
 
+.popular h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.popular h3 {
+    color: white;
+}
+
+.popular img {
+    border-radius: 50%;
+}
+
+.popular p {
+    font-size: .8rem;
+    color: #a3a3a3;
+}
+
 /* FOOTER */
 footer {
     height: 5rem;
