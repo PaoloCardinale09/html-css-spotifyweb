@@ -6,6 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>html-css-spotifyweb</title>
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -19,28 +24,32 @@
 <body>
 	<div class="d-flex">
 		<div id="side-bar">
-			<div class="logo mb2">logo</div>
+			<div class="logo mb2"><img src="./img/logo.svg" alt=""></div>
+			<div class="logo-hide mb2"> <img src="./img/logo-small.svg" alt=""></div>
 			<div class="home mb2">
-				<div>&hearts;
+				<div class="ai-center"><img src="./img/home.svg" alt="logo home">
+					<h2>
+						Home
+					</h2>
+				</div>
+				<div class="ai-center"><img src="./img/search.svg" alt="logo search">
 					<span>
-						home
+						Cerca
 					</span>
 				</div>
-				<div>&hearts;
+				<div class="ai-center"><img src="./img/libreria.svg" alt="logo libreria">
 					<span>
-						cerca
-					</span>
-				</div>
-				<div>&hearts;
-					<span>
-						la tua libreria
+						La tua libreria
 					</span>
 				</div>
 			</div>
-			<div class="playlist mb2 ">
+			<div class="playlist  ">
 				<h2>PLAYLIST</h2>
-				<div>&hearts; crea la tua playlist </div>
-				<div>nome playlist</div>
+				<div class="d-flex ai-center mb2">
+					<i class=" mr1 fa-solid fa-square-plus"></i>
+					Crea la tua playlist
+				</div>
+				<div class="mb2">nome playlist</div>
 				<div>nome playlist</div>
 				<div>nome playlist</div>
 				<div>nome playlist</div>
@@ -49,14 +58,17 @@
 				<div>nome playlist</div>
 			</div>
 			<div class="user">
-				<div>&hearts;
+				<div class="d-flex ai-center mb1"> <img class="mr1" src="./img/download.svg" alt="">
 					<span>
 						installa app
 					</span>
 				</div>
-				<div>&hearts;
-					<span>
-						Jhon Doe </span>
+				<div class="line mb1"></div>
+				<div class="d-flex">
+					<img class="mr1 bg-gray" src="./img/profile.svg" alt="">
+					<h2>
+						Jhon Doe
+					</h2>
 				</div>
 			</div>
 

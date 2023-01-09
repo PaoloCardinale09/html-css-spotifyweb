@@ -1,4 +1,8 @@
 /* GENERICS */
+body {
+    font-family: 'Figtree', sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
@@ -17,6 +21,11 @@ a {
     text-align: center;
 }
 
+.ai-center {
+    display: flex;
+    align-items: center;
+}
+
 /* SIDE BAR */
 #side-bar {
     width: 15rem;
@@ -24,9 +33,67 @@ a {
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    /* DEBUG*/
-    background-color: blue;
+    font-size: .8rem;
+    overflow: auto;
+    background-color: #000000;
+    color: #a3a3a3;
+}
+
+#side-bar .logo {
+    width: 70%;
+}
+
+#side-bar .logo-hide {
+    display: none;
+}
+
+
+/* home */
+#side-bar .home img {
+    width: 1.5rem;
+}
+
+#side-bar .home .ai-center {
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+#side-bar h2 {
+    font-size: 1rem;
     color: white;
+}
+
+/* playlist */
+
+.playlist h2 {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.playlist i {
+    font-size: 2.5rem;
+}
+
+.playlist>div {
+    margin-bottom: 1rem;
+}
+
+/* user */
+.user img {
+    width: 1rem;
+}
+
+.user .bg-gray {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+}
+
+.user .line {
+    width: 100%;
+    background-color: gray;
+    height: 1px;
 }
 
 /* MAIN  */
@@ -107,7 +174,9 @@ footer {
 }
 
 /* MEDIA QUERIES */
-/* MD */
+
+
+/* MEDIUM */
 @media screen and (max-width: 600px) {
 
     /* footer */
@@ -119,17 +188,15 @@ footer {
 
 /* EXTRA SMALL */
 @media screen and (max-width: 480px) {
+
+    /* SIDE-BAR */
     .playlist {
         display: none;
     }
 
     #side-bar {
         width: 3rem;
-    }
-
-    main,
-    main header {
-        width: calc(100% - 3rem);
+        align-items: center;
     }
 
     .user span {
@@ -138,5 +205,26 @@ footer {
 
     .home span {
         display: none;
+    }
+
+    #side-bar .logo {
+        display: none;
+    }
+
+    #side-bar .logo-hide {
+        display: block;
+        width: 2rem;
+    }
+
+    #side-bar h2,
+    .user .line {
+        display: none;
+    }
+
+
+    /* MAIN */
+    main,
+    main header {
+        width: calc(100% - 3rem);
     }
 }
