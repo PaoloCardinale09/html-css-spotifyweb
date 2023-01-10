@@ -10,6 +10,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .box {
@@ -63,7 +64,7 @@ a {
 
 #side-bar h2 {
     font-size: 1rem;
-    color: white;
+    color: #d2d2d2;
 }
 
 /* playlist */
@@ -76,9 +77,7 @@ a {
     font-size: 2.5rem;
 }
 
-.playlist>div {
-    margin-bottom: 1rem;
-}
+
 
 /* user */
 
@@ -146,6 +145,30 @@ main ul a {
     padding-top: 5rem;
 }
 
+.play {
+    display: none;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    right: calc(50% - 1.5rem);
+}
+
+.play i {
+    font-size: 3rem;
+}
+
+main img:hover {
+    filter: brightness(.3);
+}
+
+
+
+main img:hover+.play {
+    display: block;
+}
+
+.rel {
+    position: relative;
+}
 
 /*************************
  ** Recently section *****/
@@ -179,6 +202,10 @@ main ul a {
 }
 
 .personal-create h3 {
+    color: white;
+}
+
+.personal-create .play {
     color: white;
 }
 
@@ -241,6 +268,7 @@ footer {
     color: #a3a3a3;
 }
 
+
 /* Center foot */
 .controls {
     justify-content: center;
@@ -289,6 +317,28 @@ footer {
 .right-foot .music-bar {
     width: 8rem;
 }
+
+/***************
+*** EFFECTS ****/
+body a:hover {
+    color: white;
+}
+
+.left-foot .text-container p:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.center-foot .controls .big:hover {
+    transform: scale(1.2);
+}
+
+main .btn:hover {
+    transform: scale(1.1);
+}
+
+
 
 /****************************
 ******* MEDIA QUERIES ******/
@@ -375,6 +425,8 @@ footer {
     .user .line {
         display: none;
     }
+
+
 
 
 
