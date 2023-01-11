@@ -145,6 +145,16 @@ main ul a {
     padding-top: 5rem;
 }
 
+.underline {
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #adff2e;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.2rem
+}
+
 .play {
     display: none;
     position: absolute;
@@ -432,6 +442,12 @@ main .btn:hover {
         /* width: 13rem; */
 
     }
+
+    /* bonus */
+    .recently .row {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
 }
 
 /* SMALL */
@@ -487,12 +503,6 @@ main .btn:hover {
     .user .line {
         display: none;
     }
-
-
-
-
-
-
 
     /* MAIN */
     main,
