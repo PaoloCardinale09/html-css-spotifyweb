@@ -292,20 +292,47 @@ footer {
 
 .center-foot .music-bar {
     width: 25rem;
+    height: .2rem;
+    border-radius: 15px;
+    background-color: #5a5a5a;
+    align-self: center;
+}
 
+.progress {
+    width: 30%;
+    height: 100%;
+    display: block;
+    background-color: #c1c1c1;
+
+    position: relative;
 }
 
 .small {
     font-size: .6rem;
 }
 
-
-.music-bar {
-    height: .2rem;
-    border-radius: 15px;
-    background-color: #5a5a5a;
-    align-self: center;
+.center-foot .bar:hover .progress {
+    background-color: lightgreen;
 }
+
+.center-foot .bar:hover .progress::after {
+    display: block;
+}
+
+.progress::after {
+    content: "";
+    display: none;
+    height: .7rem;
+    width: .7rem;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+
+    position: absolute;
+    top: -.25rem;
+    right: -.25rem;
+
+}
+
 
 
 /* Right foot */
@@ -316,6 +343,41 @@ footer {
 
 .right-foot .music-bar {
     width: 8rem;
+    height: .2rem;
+    border-radius: 15px;
+    background-color: #5a5a5a;
+    align-self: center;
+}
+
+.progress-vol {
+    width: 30%;
+    height: 100%;
+    display: block;
+    background-color: #c1c1c1;
+
+    position: relative;
+}
+
+
+.right-foot .music-bar {
+    position: relative
+}
+
+.right-foot .progress-vol::after {
+    content: "";
+    display: none;
+    height: .7rem;
+    width: .7rem;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+
+    position: absolute;
+    top: -.25rem;
+    right: -.25rem;
+}
+
+.right-foot .music-bar:hover .progress-vol::after {
+    display: block;
 }
 
 /***************
